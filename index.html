@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+</head>
+<body>
+ 
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		header{
+			background: linear-gradient(50deg, #64eff3, #d0edf4,#b87bf5);
+			padding:10px;	
+			color:#fff;
+			font-family:"open sans";
+			overflow:hidden;
+			margin: 0;
+		}
+ 
+		.judul{
+			float: left;
+			margin: 0;
+		}
+ 
+		.menu{
+			position: fixed;
+			background: linear-gradient(20deg, #6096f0, #ffffff, #7ee2fb);
+			color: #232323;			
+			height: 100%;
+			width: 200px;
+			top: 0;
+			left: -300px;
+			-webkit-transition: left 0.2s;
+			transition: left 0.2s;
+			padding: 20px;
+			border: 1px solid #ccc;			
+		}
+ 
+		.menu ul{
+			padding: 0;
+		}
+ 
+		.menu li{
+			list-style-type: none;
+			padding: 20px 0px;
+			margin-left: 20px;
+		}
+ 
+		.menu a{
+			color: #232323;
+			text-decoration: none;
+			font-size: 10pt;
+		}
+ 
+		.tombol{
+			float: right;
+			background: transparent;
+			padding: 10px;
+			color: #fff;
+			border: 3px solid #fff;
+			cursor: pointer;
+			border-radius: 16px;
+		}
+		img{
+		  height: 80px;
+      border-radius: 23px;
+      margin-top: 13px;
+      padding: 10px;
+      margin-right: auto;
+      margin-left: 70px;
+		}
+		h4{
+		  font-size: 20px;
+		}
+		.box input{
+		  width: 150px;
+		  height: 40px;
+		  border-radius: 20px;
+		  border: 2px solid #6bfbca;
+		  transition: 6s;
+		}
+		.box button{
+		  background: transparent;
+		  cursor: pointer;
+		  border: 3px solid #fff;		
+		  border-radius: 5px;
+		  color: black;
+		  font-size: 12px;
+		}
+		.box input[type ="text"]:focus{
+		  width: 200px;
+		}
+		.slide-menu-tampil{
+			left: 0 !important;
+		}
+	</style>
+ 
+	<header>
+		<h1 class="judul">BAYUWEB</h1>
+ 
+		<button class="tombol">MENU</button>
+ 
+		<nav class="menu"> 
+			  <img src="cewek01.jpg" alt="" />
+		<form class="box">
+		    <input type="text" name="" id="" placeholder="kolom pencarian"/>
+		    <button type="submit">Cari</button>
+		</form>
+			<h4>Menu Navigasi</h4>
+			<ul>
+				<li><a href="">Beranda</a></li>
+				<li><a href="">Info</a></li>
+				<li><a href="Profil.html">Profil</a></li>
+				<li><a href="">Berita</a></li>
+				<li><a href="Jam.html">waktu</a></li>
+			</ul>
+		</nav>
+	</header>
+ 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.tombol').click(function(){
+				$('.menu').toggleClass("slide-menu-tampil");
+			});
+		});
+	</script>
+</body>
+</html>
